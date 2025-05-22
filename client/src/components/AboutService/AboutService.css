@@ -1,0 +1,151 @@
+/* .content {
+    text-align: left;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* мобилки */
+/* @media (max-width:768px) {
+    .content {
+        margin-bottom: 25%;
+        font-size: 20px;
+    }
+} */
+
+/* @media (min-width:768px) and (max-width:960px) {
+    .content {
+        margin-bottom: 10%;
+        font-size: 22px;
+    }
+} */
+
+/* @media (min-width:960px) and (max-width:1200px) {
+    .content {
+        margin-bottom: 7%;
+        font-size: 24px;
+    }
+}  */
+
+
+
+.test {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 40px;
+    /* margin-top: 5%; */
+    margin-bottom: 5%;
+    margin-left: 15px;
+    margin-right: 15px;
+    gap: 15px;
+}
+
+.aboutTitle {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 2%;
+    box-shadow: 0px 0px 5px 5px rgb(40, 40, 40);
+    /* margin: 2% 150px 2% 150px; */
+}
+
+.aboutTitle>h3 {
+    text-align: center;
+}
+
+.aboutDesc {
+    /* margin-top: 5px; */
+    box-shadow: 0px 0px 3px 2px rgb(40, 40, 40);
+    /* margin: 5px 150px 0px 150px;   */
+    /* margin: 0px 150px 0px 150px; */
+}
+
+.aboutDesc>p,
+.aboutTitle>p {
+    margin-left: 5px;
+}
+
+.aboutTitle,
+.aboutDesc {
+    border: 3px solid rgb(40, 40, 40);
+    border-radius: 15px;
+}
+
+.aboutTitle {
+    border: 3px solid rgb(204, 204, 204);
+}
+
+.aboutTitle:hover {
+    background-color: rgb(40, 40, 40);
+
+}
+
+.aboutDesc:hover {
+    background-color: rgb(40, 40, 40);
+}
+
+
+
+.AboutTitleWithoutBorder {
+    font-size: 40px;
+    /* margin: 2% 150px 2% 150px; */
+}
+
+
+
+@media (max-width:768px) {
+
+    .AboutTitleWithoutBorder,
+    .aboutTitle,
+    .aboutDesc {
+        font-size: 18px;
+    }
+
+    .test {
+        margin-bottom: 20%;
+    }
+    .AboutTitleWithoutBorder{
+        margin: 0px 20px 0px 20px;
+    }
+}
+
+@media (min-width:768px) and (max-width:960px) {
+
+    .AboutTitleWithoutBorder,
+    .aboutTitle,
+    .aboutDesc {
+        font-size: 24px;
+    }
+    .AboutTitleWithoutBorder{
+        margin: 0px 5% 0px 5%;
+    }
+    .test {
+        /* margin-bottom: 10%; */
+        margin: 0px 5% 10% 5%;
+    }
+
+}
+
+/* @media (min-width:1200px) {
+    .aboutTitle{
+        margin: 2% 150px 2% 150px;
+    }
+    .aboutDesc{
+        margin: 0px 150px 0px 150px;
+    }
+
+    
+} */
+
+@media (min-width:960px) {
+    /* .AboutTitleWithoutBorder{
+        margin: 0px 2% 0px 2%;
+    } */
+    .test, .AboutTitleWithoutBorder{
+        margin: 0px 7% 0px 7%;
+    }
+    .test{
+        margin-bottom: 7%;
+    }
+}
